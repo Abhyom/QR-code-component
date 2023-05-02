@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@100&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config={
+        theme: {
+          extend: {
+          fontFamily: {
+              'sans': ['Montserrat', 'system-ui'],
+              'serif': ['ui-serif', 'Georgia'],
+              'mono': ['ui-monospace', 'SFMono-Regular'],
+       },
+        height: {
+            '144': '36rem',
+      },
+      width:{
+        '92':'23rem',
+      }
+    }
+  }
+}
+  </script>
+</head>
+<body class="bg-[#d6e2f0] h-screen w-screen flex justify-center  items-center ">
+
+
+  <div class=" flex flex-col bg-white rounded-3xl  h-144 w-92 shadow-sm">
+    <img class=" m-5 rounded-2xl " src="images/image-qr-code.png" alt="QR">
+    <div class="flex flex-col items-center ">
+      <p class="text-2xl font-sans font-bold tracking-tighter text-center max-w-xs text-[#1f3150] my-3">Improve your front-end skills by building projects</p>
+      <p class="text-base font-thin tracking-tight text-center max-w-xs text-[#9194a3] ">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+
+</body>
+</html>
